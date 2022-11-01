@@ -21,7 +21,6 @@
 #include <cstdlib>		/* strtod */
 #include <cctype>		/* isprint */
 #include <exception>
-// #include <math.h>       /* isnan */
 #include <cmath>       /* isnan */
 
 

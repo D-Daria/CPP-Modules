@@ -51,7 +51,8 @@ void Conversion::displayChar(void)
 			std::cout << "char:\t" << "Non displayable" << std::endl;
 		return ;
 	}
-	if (isnan(toDouble()) || isinf(toDouble()) || toDouble() >= CHAR_MAX || toDouble() < 0)
+	if (isnan(getlDouble()) || isinf(getlDouble())
+			|| getlDouble() >= std::numeric_limits<char>::max() || getlDouble() < 0)
 		std::cout << "char:\timpossible" << std::endl;
 	else if (isprint(toChar()))
 		std::cout << "char:\t'" << toChar() << "'" << std::endl;
@@ -61,9 +62,9 @@ void Conversion::displayChar(void)
 
 void Conversion::displayInt(void)
 {
-	if (isnan(toDouble()) || isinf(toDouble()) 
-		|| toDouble() >= std::numeric_limits<int>::max() 
-		|| toDouble() <= std::numeric_limits<int>::min())
+	if (isnan(getlDouble()) || isinf(getlDouble()) 
+		|| getlDouble() >= std::numeric_limits<int>::max() 
+		|| getlDouble() <= std::numeric_limits<int>::min())
 	{
 		std::cout << "int:\t" << "impossible" << std::endl;
 		return ;
@@ -113,8 +114,6 @@ void Conversion::displayDouble(void)
 
 void Conversion::display(void)
 {
-	// double num = getlDouble();
-
 	displayChar();
 	displayInt();
 	displayFloat();
@@ -126,7 +125,6 @@ void Conversion::convert(void)
 	m_type = validateInput();
 	if (getType() == 0)
 		throw(ConversionImpossibleException());
-	std::cout << "type: " << getType() << std::endl;
 	display();
 }
 
@@ -142,17 +140,17 @@ int Conversion::getType(void) const
 
 char Conversion::toChar(void)
 {
-	return static_cast<char>(toDouble());
+	return static_cast<char>(getlDouble());
 }
 
 int Conversion::toInt(void)
 {
-	return static_cast<int>(toDouble());
+	return static_cast<int>(getlDouble());
 }
 
 float Conversion::toFloat(void)
 {
-	return static_cast<float>(toDouble());
+	return static_cast<float>(getlDouble());
 }
 
 double Conversion::toDouble(void)
