@@ -52,7 +52,7 @@ void Conversion::displayChar(void)
 		return ;
 	}
 	if (isnan(getlDouble()) || isinf(getlDouble())
-			|| getlDouble() >= std::numeric_limits<char>::max() || getlDouble() < 0)
+			|| getlDouble() > std::numeric_limits<char>::max() || getlDouble() < 0)
 		std::cout << "char:\timpossible" << std::endl;
 	else if (isprint(toChar()))
 		std::cout << "char:\t'" << toChar() << "'" << std::endl;
@@ -63,8 +63,8 @@ void Conversion::displayChar(void)
 void Conversion::displayInt(void)
 {
 	if (isnan(getlDouble()) || isinf(getlDouble()) 
-		|| getlDouble() >= std::numeric_limits<int>::max() 
-		|| getlDouble() <= std::numeric_limits<int>::min())
+		|| getlDouble() > std::numeric_limits<int>::max() 
+		|| getlDouble() < std::numeric_limits<int>::min())
 	{
 		std::cout << "int:\t" << "impossible" << std::endl;
 		return ;

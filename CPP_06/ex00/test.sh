@@ -56,6 +56,10 @@ printf "${BLUE}./convert 0.0 ${NC}\n"
 ./convert 0.0
 sleep 0.3
 
+printf "${BLUE}./convert ';' ${NC}\n"
+./convert ';'
+sleep 0.3
+
 printf "${BLUE}./convert 3.33333333333333333 ${NC}\n"
 ./convert 3.33333333333333333
 sleep 0.3
