@@ -37,6 +37,8 @@ int main(void)
 	std::cout << std::endl;
 
 	d = deserialize(raw);
+	d->floor = 3;
+	d->isOpened = false;
 	print_struct(d);
 	std::cout << "sizeof(d): " << sizeof(d) << std::endl;
 
