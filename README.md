@@ -53,15 +53,15 @@ Implementation of base class and derived classes.
 Task is dedicated to solving Diamond problem.
 
 ```
-	    ClapTrap
-	   |       \
-	  |         \
-	 |           \
-  ScavTrap    FragTrap
-     \           |
-	  \         |
-	   \       |
-	  DiamondTrap
+	     ClapTrap
+	    /       \
+	   /         \
+	  /           \
+       ScavTrap    FragTrap
+     	  \           /
+	   \         /
+	    \       /
+	   DiamondTrap
 ```
 
 ## CPP Module 04
