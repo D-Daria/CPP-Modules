@@ -4,7 +4,7 @@ Project is an introduction to C++ language at School21/Ecole42.
 Each module is dedicated to some aspects of C++ language and helps to get acquainted with language syntax, constructions and tools.
 
 ## General rules
-- Since project requirement all programs are compiled using <code>c++</code>, <code>-std=c++98</code>, <code>-Wall- Wextra -Werror</code> flags.
+- According to project requirements all programs are compiled using <code>c++</code>, <code>-std=c++98</code>, <code>-Wall- Wextra -Werror</code> flags.
 - Each task contains own Makefile that compiles the program.
 
 ## CPP Module 00
