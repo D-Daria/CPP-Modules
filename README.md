@@ -9,7 +9,7 @@ Each module is dedicated to some aspects of C++ language and helps to get acquai
 
 ## CPP Module 00
 
-Whole module is dedicated to Languages Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other language basics.
+Whole module is dedicated to Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other language basics.
 
 [ex00](https://github.com/D-Dashka/CPP-Modules/tree/main/CPP_00/ex00)
 
@@ -42,7 +42,7 @@ The task is to implement bsp function that uses Fixed and Point class from previ
 
 ## CPP Module 03
 
-Module in an introduction to inheritance.
+Module is an introduction to inheritance.
 
 [ex00 - ex02](https://github.com/D-Dashka/CPP-Modules/tree/main/CPP_03)
 
