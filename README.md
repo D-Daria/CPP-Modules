@@ -117,3 +117,48 @@ Introduction to algorithms and iterators in C++.
 [ex02](https://github.com/D-Dashka/CPP-Modules/tree/main/CPP_08)
 
 Implementation of <code>std::stack</code> class with additional feature: the class should be iterable.
+
+## CPP Module 09
+
+The module is dedicated to usage of Container classes.
+
+[ex00](https://github.com/D-Daria/CPP-Modules/tree/main/CPP_09/ex00)
+
+Program should output the value of certain amount of bitcoin on a certain date. It reads `input` file, comparing corresponding dates with those in `data.csv` and make an exchange depending on rate.
+
+data.csv
+
+```
+date,exchange_rate
+2009-01-02,0
+2009-01-05,0
+2009-01-08,0
+2009-01-11,0
+2009-01-14,0
+2009-01-17,0
+2009-01-20,0
+...
+```
+
+input
+
+```
+date | value
+2005-02-02 | 0.1
+2011-09-14 | 390.57
+2010-11-03 | 517.239
+2020-06-26 | 998.808
+2012-07-09 | 1242.2
+2019-07-11 | 700.492
+2019-06-25 | 416.636
+2017-05-22 | 507.753
+...
+```
+
+[ex01](https://github.com/D-Daria/CPP-Modules/tree/main/CPP_09/ex01)
+
+Implementation of Reverse Polish notation
+
+[ex02](https://github.com/D-Daria/CPP-Modules/tree/main/CPP_09/ex02)
+
+The aim is to implement merge insertion sort algorithm using two different containers and compare the time spent by both containers on data management and sorting.
